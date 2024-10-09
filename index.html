@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantaCidade - Plataforma de Agricultura Urbana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PlantaCidade</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#community">Comunidade</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo à PlantaCidade</h1>
+            <p>Transformando espaços urbanos em jardins produtivos</p>
+            <button id="register-btn">Cadastre-se</button>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>A PlantaCidade é uma plataforma inovadora que conecta entusiastas da agricultura urbana em todo o Brasil e o mundo.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos em Destaque</h2>
+            <div class="project-grid">
+                <!-- Projetos serão inseridos dinamicamente via JavaScript -->
+            </div>
+            <button id="add-project-btn">Adicionar Projeto</button>
+        </section>
+
+        <section id="community">
+            <h2>Nossa Comunidade</h2>
+            <div class="community-feed">
+                <!-- Feed da comunidade será inserido dinamicamente via JavaScript -->
+            </div>
+            <button id="add-post-btn">Criar Post</button>
+        </section>
+
+        <section id="contact">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PlantaCidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modais -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se</h2>
+            <form id="register-form">
+                <input type="text" name="fullName" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <input type="password" name="confirmPassword" placeholder="Confirme a senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="add-project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Projeto</h2>
+            <form id="add-project-form">
+                <input type="text" name="title" placeholder="Título do Projeto" required>
+                <textarea name="description" placeholder="Descrição do Projeto" required></textarea>
+                <button type="submit">Adicionar Projeto</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="add-post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Criar Post</h2>
+            <form id="add-post-form">
+                <textarea name="content" placeholder="O que você quer compartilhar?" required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
